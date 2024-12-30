@@ -1,0 +1,14 @@
+# Dependency directories
+/node_modules
+
+# Parcel cache
+/.parcel-cache
+
+# Build output directories
+/dist
+
+# This folder includes test cases coverage
+/coverage
+
+
+.DS_Store

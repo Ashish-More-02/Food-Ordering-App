@@ -1,0 +1,531 @@
+
+:root {
+    --myGreyColor: rgb(172, 172, 172);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-styling {
+    font-family: sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    width: 98vw;
+    height: 60px;
+    background-color: black;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    position: sticky;
+    top: 4px;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.logo-container>h1 {
+    padding-left: 10px;
+    font-family: monospace;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 1.5rem;
+}
+
+.logo {
+    height: 92%;
+    cursor: pointer;
+}
+
+.nav-items {
+    width: 60%;
+
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    color: white;
+
+}
+
+.nav-items ul>li {
+    font-size: 1.4rem;
+    /* font-family: monospace; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.LinkRouteStyle {
+    color: white;
+    text-decoration: none;
+}
+
+.LinkRouteStyle:hover {
+    color: rgb(171, 171, 171);
+}
+
+.nav-items>ul>:last-child {
+    border: 1px solid white;
+
+}
+
+
+
+
+/* Body */
+
+.Resturant-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 0.2px solid black;
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 237);
+
+}
+
+/* cards in resturant container */
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 280px;
+    /* border: 0.2px solid black; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px 5px rgb(207, 207, 207);
+    padding: 10px;
+    margin: 22px;
+    transition: all 0.15s ease-in;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+
+.Card:hover {
+    box-shadow: 5px 5px 8px 5px rgb(161, 161, 161);
+    transform: scale(1.02);
+}
+
+.imgContainer {
+    height: 60%;
+    width: 90%;
+    background-color: rgb(172, 172, 172);
+    margin: auto;
+    margin: 5px;
+    border-radius: 20px;
+    /* overflow: hidden; */
+
+}
+
+.imgContainer>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.Search-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+
+.Search-component>input {
+    font-size: 1.4rem;
+    width: 30%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.Search-component>button {
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.2s ease-in;
+}
+
+.search-style:active{
+    background-color: rgb(221, 221, 221);
+}
+
+.filter-btn {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.body-heading {
+    margin: 10px 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dark-btn {
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+
+
+/* shimmer classes  */
+
+.h1-shimmer {
+    width: 40%;
+    background-color: var(--myGreyColor);
+    color: var(--myGreyColor);
+    margin: 10px 25px;
+    border-radius: 20px;
+}
+
+.h1-shimmer2 {
+    background-color: var(--myGreyColor);
+    color: var(--myGreyColor);
+    position: relative;
+    right: 20px;
+    border-radius: 10px;
+    padding: 0px 15px;
+    margin-top: 5px;
+}
+
+/* .shimmer-container {} */
+
+.shimmer-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-shimmer {
+    height: 60%;
+    width: 90%;
+    background-color: var(--myGreyColor);
+    margin: auto;
+    margin: 5px;
+}
+
+.login-btn {
+    color: white;
+    border: 2px soild white;
+    background-color: rgb(114, 179, 97);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.pay-btn{
+    color: white;
+    border: 2px soild white;
+    background-image: linear-gradient(45deg, rgb(99, 177, 255),rgb(79, 52, 217));
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pay-btn:active{
+    background-image: linear-gradient(45deg, rgb(75, 136, 196),rgb(58, 37, 160));
+}
+
+.logout-btn {
+    color: white;
+    border: 2px soild white;
+    background-color: rgb(214, 120, 113);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Menu styling  */
+.Menu-Resturant-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 0.2px solid black;
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 237);
+}
+
+.Menu-Card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    width: 65%;
+    /* border: 0.5px solid black; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px 5px rgb(207, 207, 207);
+    padding: 10px;
+    margin: 22px;
+    transition: all 0.15s ease-in;
+    background-color: white;
+    /* cursor: pointer; */
+    overflow: hidden;
+}
+
+.ResturantCard-info {
+    width: 90%;
+    padding: 3px;
+}
+
+.info {
+    width: 60%;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.Menu-imgContainer {
+    height: 90%;
+    width: 25%;
+    background-color: var(--myGreyColor);
+    margin: auto;
+    margin: 5px;
+    border-radius: 20px;
+    position: relative;
+
+    /* overflow: hidden; */
+}
+
+.Menu-imgContainer>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.Resturant-heading-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Resturant-heading-cnt>h1 {
+    font-size: 2.5rem;
+}
+
+.Resturant-heading-cnt>h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.addToCart {
+    position: absolute;
+    bottom: -8px;
+    left: 22%;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgb(59, 174, 53);
+    border-radius: 15px;
+    border: 0.5px solid grey;
+    box-shadow: 2px 5px 10px 2px rgb(187, 187, 187);
+    background-color: white;
+    transition: all 0.15s ease-in;
+}
+
+.addToCart:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.menu-heading2 {
+    margin-left: 30px;
+}
+
+
+/* shimmer menu  */
+
+.shimmer-Resturant-heading-cnt {}
+
+.shimmer-f-s {
+    background-color: var(--myGreyColor);
+    color: var(--myGreyColor);
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+
+.shimmer-info {
+    background-color: var(--myGreyColor);
+    color: var(--myGreyColor);
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+
+.shimmer-menu-main-cnt {
+    transition: all 0.5s ease-in;
+}
+
+
+/* About_us.js */
+.About_us_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* User.js  */
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 300px; */
+    width: 280px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    background-color: rgb(228, 228, 228);
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.img-Container {}
+
+.user-card img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+
+
+
+/* FoodCards.js */
+
+.food-cards-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligns items to the start */
+    overflow-x: scroll;
+    /* Enables horizontal scrolling */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    /* Adds smooth scrolling */
+    flex-wrap: nowrap;
+    /* Prevents wrapping to the next row */
+    white-space: nowrap;
+    /* Keeps items on a single row */
+    gap: 16px;
+    /* Adds space between each card (optional) */
+    margin: auto;
+    margin: 20px auto;
+}
+
+.food-img-container {
+    height: 150px;
+    width: 150px;
+    background-color: var(--myGreyColor);
+    flex-shrink: 0;
+    /* Prevents the card from shrinking */
+    cursor: pointer;
+}
+
+.food-img-container>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
+}
+
+/* Optional: Hide the scroll bar (for a cleaner look) */
+.food-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.shimmer-food-img-container {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(181, 181, 181);
+    flex-shrink: 0;
+    /* Prevents the card from shrinking */
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0px 8px;
+}
+
+
+.offline-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.tool-tip-style {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 33px; /* Adjust this for tooltip positioning*/
+    right: -15px;
+    background-color: var(--myGreyColor);
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 1; /*Make sure it appears above other elements*/
+}
+
+
+
+.login-page{
+    height: 89vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login-cnt{
+    height: 90%;
+    width: 30%;
+    background-color: rgb(229, 232, 234);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.login-btn{
+    border: 1px solid black;
+}
+
+.createAcc-style{
+    background-color: rgb(229, 232, 234);
+    height: 100%;
+    width: 30%;
+}
